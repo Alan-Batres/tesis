@@ -1,0 +1,299 @@
+.gastos-resumen {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gastos-resumen h2 {
+  color: #3b82f6;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.presupuesto-info {
+  background: #f0f9ff;
+  padding: 1.5rem;
+  border-radius: 4px;
+  border: 1px solid #3b82f6;
+}
+
+.presupuesto-bar {
+  width: 100%;
+  height: 24px;
+  background: #e0e7ff;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.barra-usada {
+  height: 100%;
+  background: #3b82f6;
+}
+
+.barra-usada.overflow {
+  background: #ef4444;
+}
+
+.presupuesto-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.presupuesto-stats p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.restante {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.restante.positivo {
+  color: #10b981;
+}
+
+.restante.negativo {
+  color: #ef4444;
+}
+
+.gastos-por-tipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tipo-card {
+  padding: 1.5rem;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  background: white;
+}
+
+.tipo-fijos {
+  border-color: #64748b;
+}
+
+.tipo-variables {
+  border-color: #3b82f6;
+}
+
+.tipo-hormigas {
+  border-color: #f59e0b;
+}
+
+.tipo-discrecionales {
+  border-color: #ec4899;
+}
+
+.tipo-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.subtotal {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #3b82f6;
+  margin: 0 0 1rem 0;
+}
+
+.gastos-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.gasto-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f9fafb;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+}
+
+.gasto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.descripcion {
+  font-weight: bold;
+  color: #1f2937;
+  font-size: 0.95rem;
+}
+
+.fecha {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.gasto-monto-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.monto {
+  font-weight: bold;
+  color: #3b82f6;
+  font-size: 1rem;
+  min-width: 70px;
+  text-align: right;
+}
+
+.btn-eliminar {
+  padding: 0.25rem 0.5rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.btn-eliminar:hover {
+  background: #dc2626;
+}
+
+.sin-gastos {
+  text-align: center;
+  color: #9ca3af;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #f0f9ff;
+  border-radius: 4px;
+  border: 1px dashed #3b82f6;
+}
+
+.empty-state p {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.tipo-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+}
+
+.subtotal {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 1rem 0;
+}
+
+.gastos-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.gasto-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+
+.gasto-item:hover {
+  background: #f9fafb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.gasto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.descripcion {
+  font-weight: 600;
+  color: var(--dark);
+  font-size: 0.95rem;
+}
+
+.fecha {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.gasto-monto-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.monto {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 1rem;
+  min-width: 70px;
+  text-align: right;
+}
+
+.btn-eliminar {
+  padding: 0.25rem 0.5rem;
+  background: var(--error);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-eliminar:hover {
+  background: #dc2626;
+  transform: scale(1.1);
+}
+
+.sin-gastos {
+  text-align: center;
+  color: #9ca3af;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: 8px;
+  border: 2px dashed var(--border);
+}
+
+.empty-state p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin: 0;
+}
