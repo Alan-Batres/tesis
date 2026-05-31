@@ -427,12 +427,3 @@ Esta app proporciona **análisis general** basado en estándares financieros, pe
 - Se basa en presupuestos mensuales simples; no cubre inversiones ni deuda compleja
 
 ---
-
-## Changelog
-
-**v1.0** - Lanzamiento inicial
-- 4 categorías de gastos
-- Regla 50/30/20
-- Análisis automático con 9 tipos de recomendaciones
-- Gráfico de distribución
-- Basado en estándares financieros reconocidos con fuentes verificadas y accesibles
